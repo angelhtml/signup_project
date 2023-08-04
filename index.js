@@ -43,5 +43,5 @@ app.post("/verify", VerifyUser)
 app.post("/login", Login)
 
 app.listen(process.env.SERVER_PORT, function(){
-    console.log(chalk.white.bgGreen.bold(`express server is running on port http://localhost:${process.env.SERVER_PORT}`));
+    console.log(chalk.white.bgGreen.bold(`express server is running on port https://worried-puce-shoe.cyclic.app/`));
 }) 
