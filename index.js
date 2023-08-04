@@ -11,7 +11,7 @@ const { Login } = require('./lib/login');
 require('dotenv').config()
 
 const secret = process.env.SECRET
-const port = 3001
+const port = 5000
 
 app.use(cors())
 app.use(express.json());
