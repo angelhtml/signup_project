@@ -22,7 +22,7 @@ app.get("/test", async (req, res) => {
     //console.log(req.header())
     res.header("Access-Control-Expose-Headers", "*")
     res.set("header_token", "take me !!!!!!!!!!!!!!!!!!!!!!!!!!!")
-    res.send('...')
+    res.send('Free node js host 🚀')
 })
 
 const VerifyUser = async (req, res) => {
