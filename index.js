@@ -41,6 +41,9 @@ const VerifyUser = async (req, res) => {
 app.post("/signup", Signup);
 app.post("/verify", VerifyUser)
 app.post("/login", Login)
+app.post("/sdk", async (req, res) => {
+    res.send(req.body.data)
+})
 
 app.listen(process.env.SERVER_PORT, function(){
     console.log(chalk.white.bgGreen.bold(`express server is running on port https://worried-puce-shoe.cyclic.app/`));
