@@ -49,6 +49,6 @@ app.get("/sdk", async (req, res) => {
     res.send("...")
 })
 
-app.listen(process.env.SERVER_PORT, function(){
+app.listen(port, function(){
     console.log(chalk.white.bgGreen.bold(`express server is running on port https://worried-puce-shoe.cyclic.app/`));
 }) 
