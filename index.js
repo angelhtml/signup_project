@@ -45,7 +45,8 @@ app.post("/login", Login)
 
 app.get("/sdk", async (req, res) => {
     const list = await axios.get('https://angelhtml.github.io/json/upland1/coin.json')
-    res.send(list)
+    console.log(list)
+    res.send("...")
 })
 
 app.listen(process.env.SERVER_PORT, function(){
