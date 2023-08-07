@@ -44,8 +44,8 @@ app.post("/login", Login)
 */
 
 app.get("/sdk", async (req, res) => {
-    const list = await axios.get('https://angelhtml.github.io/json/upland1/coin.json')
-    console.log(list)
+    //const list = await axios.get('https://angelhtml.github.io/json/upland1/coin.json')
+    console.log("....")
     res.send("...")
 })
 
