@@ -8,6 +8,7 @@ const table = require('cakebase');
 const { Signup } = require('./lib/signup');
 const { Verify } = require('./lib/verify');
 const { Login } = require('./lib/login');
+const axios = require("axios")
 require('dotenv').config()
 
 const secret = process.env.SECRET
