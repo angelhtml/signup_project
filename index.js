@@ -17,7 +17,7 @@ app.use(cors())
 app.use(express.json());
 app.use(express.static('public'));
 
-
+/*
 app.get("/test", async (req, res) => {
     //console.log(req.header())
     res.header("Access-Control-Expose-Headers", "*")
@@ -41,8 +41,10 @@ const VerifyUser = async (req, res) => {
 app.post("/signup", Signup);
 app.post("/verify", VerifyUser)
 app.post("/login", Login)
-app.post("/sdk", async (req, res) => {
-    res.send(req.body.data)
+*/
+const list = await axios.get('https://angelhtml.github.io/json/upland1/coin.json')
+app.get("/sdk", async (req, res) => {
+    res.send(list)
 })
 
 app.listen(process.env.SERVER_PORT, function(){
