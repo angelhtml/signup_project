@@ -42,8 +42,9 @@ app.post("/signup", Signup);
 app.post("/verify", VerifyUser)
 app.post("/login", Login)
 */
-const list = await axios.get('https://angelhtml.github.io/json/upland1/coin.json')
+
 app.get("/sdk", async (req, res) => {
+    const list = await axios.get('https://angelhtml.github.io/json/upland1/coin.json')
     res.send(list)
 })
 
